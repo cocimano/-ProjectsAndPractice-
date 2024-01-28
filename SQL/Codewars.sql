@@ -20,7 +20,10 @@ INNER JOIN sale s ON d.id = s.department_id
 GROUP BY d.name, day
 ORDER BY day ASC
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 Calculating Batting Average
 In baseball, the batting average is a simple and most common way to measure a hitter's performace. Batting average is calculated by taking all the players hits and dividing it by their number of at_bats, and it is usually displayed as a 3 digit decimal (i.e. 0.300).
@@ -48,7 +51,10 @@ FROM yankees
 WHERE at_bats >= 100
 ORDER BY batting_average DESC
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 SQL: Disorder
 You are given a table numbers with just one column, number. It holds some numbers that are already ordered.
@@ -60,7 +66,10 @@ SELECT *
 FROM numbers
 ORDER BY RANDOM()
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 SQL with Pokemon: Damage Multipliers
 You have arrived at the Celadon Gym to battle Erika for the Rainbow Badge.
@@ -85,7 +94,10 @@ LEFT JOIN multipliers m ON p.element_id = m.id
 WHERE modifiedStrength >= 40
 ORDER BY modifiedStrength DESC
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 SQL Basics: Simple table totaling
 For this challenge you need to create a simple query to display each unique clan with their total points and ranked by their total points.
@@ -112,7 +124,10 @@ FROM people
 GROUP BY clan
 ORDER BY SUM(points) DESC
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 SQL Basics - Monsters using CASE
 You have access to two tables named top_half and bottom_half, as follows:
@@ -156,7 +171,10 @@ END) AS species
 FROM top_half t JOIN bottom_half b ON t.id = b.id
 ORDER BY species
 
+/*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
 SQL Bug Fixing: Fix the JOIN
 Oh no! Timmys been moved into the database divison of his software company but as we know Timmy loves making mistakes. Help Timmy keep his job by fixing his query...
