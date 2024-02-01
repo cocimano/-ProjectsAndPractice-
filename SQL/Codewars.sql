@@ -274,7 +274,51 @@ ORDER BY level, id;
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
-
+/*
+SQL Basics: Group By Day
+There is an events table used to track different key activities taken on a website. For this task you need to:
+find the entries whose name equals "trained"
+group them by the day the activity happened (the date part of the created_at timestamp) and their description's
+the 2 aforementioned fields should be returned together with the number of grouped entries in a column called count
+the result should also be sorted by day
+"events" table schema
+id (bigint)
+name (text)
+created_at (timestamp)
+description (text)
+expected result schema
+day (date)
+description (text)
+count (numeric)
+Solution:
+*/
+SELECT DATE(created_at) AS day, description, COUNT(description) AS count
+FROM events
+WHERE name = 'trained'
+GROUP BY DATE(created_at), description
+ORDER BY DATE(created_at)
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+SQL Basics: Simple HAVING
+For this challenge you need to create a simple HAVING statement, you want to count how many people have the same age and return the groups with 10 or more people who have that age.
+people table schema
+id
+name
+age
+return table schema
+age
+total_people
+Solution:
+*/
+SELECT age, COUNT(age) AS total_people
+FROM people
+GROUP BY age
+HAVING COUNT(age) >= 10
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 
 
