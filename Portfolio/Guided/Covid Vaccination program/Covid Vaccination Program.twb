@@ -1,0 +1,1724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' inline='true' name='federated.11qmo041dogl2213yaeuw0cnu4bl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='textscan.1gmk2pg06xj8mv1bl09i60ydv0t8'>
+            <connection class='textscan' directory='C:/Users/Fede Cocimano/Documents/ROAD-TO-DATA-CAREER/StarkIndustries-SpecialProjects/Portfolio/Guided/Covid Vaccination program' filename='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1gmk2pg06xj8mv1bl09i60ydv0t8' name='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' table='[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data#csv]' type='table'>
+          <columns character-set='UTF-16LE' header='yes' locale='es_AR' separator='&#9;'>
+            <column datatype='string' name='Continent' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='boolean' name='Date Range Selected' ordinal='2' />
+            <column datatype='string' name='Excess Mortality' ordinal='3' />
+            <column datatype='string' name='Excess Mortality Cumulative' ordinal='4' />
+            <column datatype='string' name='Excess Mortality Cumulative Absolute' ordinal='5' />
+            <column datatype='string' name='Excess Mortality Cumulative Per Million' ordinal='6' />
+            <column datatype='string' name='Extreme Poverty' ordinal='7' />
+            <column datatype='string' name='Female Smokers' ordinal='8' />
+            <column datatype='string' name='Hosp Patients' ordinal='9' />
+            <column datatype='string' name='Hosp Patients Per Million' ordinal='10' />
+            <column datatype='string' name='Icu Patients' ordinal='11' />
+            <column datatype='string' name='Icu Patients Per Million' ordinal='12' />
+            <column datatype='string' name='Iso Code' ordinal='13' />
+            <column datatype='string' name='Location' ordinal='14' />
+            <column datatype='string' name='Location (copy)' ordinal='15' />
+            <column datatype='string' name='Location (geo)' ordinal='16' />
+            <column datatype='string' name='Male Smokers' ordinal='17' />
+            <column datatype='string' name='New Tests' ordinal='18' />
+            <column datatype='string' name='New Tests Per Thousand' ordinal='19' />
+            <column datatype='string' name='New Tests Smoothed' ordinal='20' />
+            <column datatype='string' name='New Tests Smoothed Per Thousand' ordinal='21' />
+            <column datatype='string' name='Positive Rate' ordinal='22' />
+            <column datatype='string' name='Tests Per Case' ordinal='23' />
+            <column datatype='string' name='Tests Units' ordinal='24' />
+            <column datatype='string' name='Total Tests' ordinal='25' />
+            <column datatype='string' name='Total Tests Per Thousand' ordinal='26' />
+            <column datatype='string' name='Weekly Hosp Admissions' ordinal='27' />
+            <column datatype='string' name='Weekly Hosp Admissions Per Million' ordinal='28' />
+            <column datatype='string' name='Weekly Icu Admissions' ordinal='29' />
+            <column datatype='string' name='Weekly Icu Admissions Per Million' ordinal='30' />
+            <column datatype='integer' name='Aged 65 Older' ordinal='31' />
+            <column datatype='integer' name='Aged 70 Older' ordinal='32' />
+            <column datatype='integer' name='Cardiovasc Death Rate' ordinal='33' />
+            <column datatype='string' name='Diabetes Prevalence' ordinal='34' />
+            <column datatype='string' name='Fully Vaccinated over Population' ordinal='35' />
+            <column datatype='string' name='Gdp Per Capita' ordinal='36' />
+            <column datatype='integer' name='Handwashing Facilities' ordinal='37' />
+            <column datatype='string' name='Hospital Beds Per Thousand' ordinal='38' />
+            <column datatype='integer' name='Human Development Index' ordinal='39' />
+            <column datatype='string' name='Life Expectancy' ordinal='40' />
+            <column datatype='string' name='Median Age' ordinal='41' />
+            <column datatype='integer' name='New Cases' ordinal='42' />
+            <column datatype='string' name='New Cases Per Million' ordinal='43' />
+            <column datatype='string' name='New Cases Smoothed' ordinal='44' />
+            <column datatype='string' name='New Cases Smoothed Per Million' ordinal='45' />
+            <column datatype='integer' name='New Deaths' ordinal='46' />
+            <column datatype='string' name='New Deaths Per Million' ordinal='47' />
+            <column datatype='string' name='New Deaths Smoothed' ordinal='48' />
+            <column datatype='string' name='New Deaths Smoothed Per Million' ordinal='49' />
+            <column datatype='integer' name='New Vaccinations' ordinal='50' />
+            <column datatype='string' name='New Vaccinations over Population' ordinal='51' />
+            <column datatype='integer' name='New Vaccinations Smoothed' ordinal='52' />
+            <column datatype='integer' name='New Vaccinations Smoothed Per Million' ordinal='53' />
+            <column datatype='string' name='Not Vaccinated over Population ' ordinal='54' />
+            <column datatype='integer' name='People Fully Vaccinated' ordinal='55' />
+            <column datatype='string' name='People Fully Vaccinated Per Hundred' ordinal='56' />
+            <column datatype='integer' name='People Vaccinated' ordinal='57' />
+            <column datatype='string' name='People Vaccinated over Population (delta)' ordinal='58' />
+            <column datatype='string' name='People Vaccinated Per Hundred' ordinal='59' />
+            <column datatype='integer' name='Population' ordinal='60' />
+            <column datatype='integer' name='Population Density' ordinal='61' />
+            <column datatype='string' name='Reproduction Rate' ordinal='62' />
+            <column datatype='string' name='Stringency Index' ordinal='63' />
+            <column datatype='integer' name='Total Boosters' ordinal='64' />
+            <column datatype='string' name='Total Boosters Per Hundred' ordinal='65' />
+            <column datatype='integer' name='Total Cases' ordinal='66' />
+            <column datatype='string' name='Total Cases Per Million' ordinal='67' />
+            <column datatype='integer' name='Total Deaths' ordinal='68' />
+            <column datatype='string' name='Total Deaths Per Million' ordinal='69' />
+            <column datatype='integer' name='Total Vaccinations' ordinal='70' />
+            <column datatype='string' name='Total Vaccinations Per Hundred' ordinal='71' />
+            <column datatype='string' name='Vaccinated over Population' ordinal='72' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1gmk2pg06xj8mv1bl09i60ydv0t8' name='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' table='[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data#csv]' type='table'>
+          <columns character-set='UTF-16LE' header='yes' locale='es_AR' separator='&#9;'>
+            <column datatype='string' name='Continent' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='boolean' name='Date Range Selected' ordinal='2' />
+            <column datatype='string' name='Excess Mortality' ordinal='3' />
+            <column datatype='string' name='Excess Mortality Cumulative' ordinal='4' />
+            <column datatype='string' name='Excess Mortality Cumulative Absolute' ordinal='5' />
+            <column datatype='string' name='Excess Mortality Cumulative Per Million' ordinal='6' />
+            <column datatype='string' name='Extreme Poverty' ordinal='7' />
+            <column datatype='string' name='Female Smokers' ordinal='8' />
+            <column datatype='string' name='Hosp Patients' ordinal='9' />
+            <column datatype='string' name='Hosp Patients Per Million' ordinal='10' />
+            <column datatype='string' name='Icu Patients' ordinal='11' />
+            <column datatype='string' name='Icu Patients Per Million' ordinal='12' />
+            <column datatype='string' name='Iso Code' ordinal='13' />
+            <column datatype='string' name='Location' ordinal='14' />
+            <column datatype='string' name='Location (copy)' ordinal='15' />
+            <column datatype='string' name='Location (geo)' ordinal='16' />
+            <column datatype='string' name='Male Smokers' ordinal='17' />
+            <column datatype='string' name='New Tests' ordinal='18' />
+            <column datatype='string' name='New Tests Per Thousand' ordinal='19' />
+            <column datatype='string' name='New Tests Smoothed' ordinal='20' />
+            <column datatype='string' name='New Tests Smoothed Per Thousand' ordinal='21' />
+            <column datatype='string' name='Positive Rate' ordinal='22' />
+            <column datatype='string' name='Tests Per Case' ordinal='23' />
+            <column datatype='string' name='Tests Units' ordinal='24' />
+            <column datatype='string' name='Total Tests' ordinal='25' />
+            <column datatype='string' name='Total Tests Per Thousand' ordinal='26' />
+            <column datatype='string' name='Weekly Hosp Admissions' ordinal='27' />
+            <column datatype='string' name='Weekly Hosp Admissions Per Million' ordinal='28' />
+            <column datatype='string' name='Weekly Icu Admissions' ordinal='29' />
+            <column datatype='string' name='Weekly Icu Admissions Per Million' ordinal='30' />
+            <column datatype='integer' name='Aged 65 Older' ordinal='31' />
+            <column datatype='integer' name='Aged 70 Older' ordinal='32' />
+            <column datatype='integer' name='Cardiovasc Death Rate' ordinal='33' />
+            <column datatype='string' name='Diabetes Prevalence' ordinal='34' />
+            <column datatype='string' name='Fully Vaccinated over Population' ordinal='35' />
+            <column datatype='string' name='Gdp Per Capita' ordinal='36' />
+            <column datatype='integer' name='Handwashing Facilities' ordinal='37' />
+            <column datatype='string' name='Hospital Beds Per Thousand' ordinal='38' />
+            <column datatype='integer' name='Human Development Index' ordinal='39' />
+            <column datatype='string' name='Life Expectancy' ordinal='40' />
+            <column datatype='string' name='Median Age' ordinal='41' />
+            <column datatype='integer' name='New Cases' ordinal='42' />
+            <column datatype='string' name='New Cases Per Million' ordinal='43' />
+            <column datatype='string' name='New Cases Smoothed' ordinal='44' />
+            <column datatype='string' name='New Cases Smoothed Per Million' ordinal='45' />
+            <column datatype='integer' name='New Deaths' ordinal='46' />
+            <column datatype='string' name='New Deaths Per Million' ordinal='47' />
+            <column datatype='string' name='New Deaths Smoothed' ordinal='48' />
+            <column datatype='string' name='New Deaths Smoothed Per Million' ordinal='49' />
+            <column datatype='integer' name='New Vaccinations' ordinal='50' />
+            <column datatype='string' name='New Vaccinations over Population' ordinal='51' />
+            <column datatype='integer' name='New Vaccinations Smoothed' ordinal='52' />
+            <column datatype='integer' name='New Vaccinations Smoothed Per Million' ordinal='53' />
+            <column datatype='string' name='Not Vaccinated over Population ' ordinal='54' />
+            <column datatype='integer' name='People Fully Vaccinated' ordinal='55' />
+            <column datatype='string' name='People Fully Vaccinated Per Hundred' ordinal='56' />
+            <column datatype='integer' name='People Vaccinated' ordinal='57' />
+            <column datatype='string' name='People Vaccinated over Population (delta)' ordinal='58' />
+            <column datatype='string' name='People Vaccinated Per Hundred' ordinal='59' />
+            <column datatype='integer' name='Population' ordinal='60' />
+            <column datatype='integer' name='Population Density' ordinal='61' />
+            <column datatype='string' name='Reproduction Rate' ordinal='62' />
+            <column datatype='string' name='Stringency Index' ordinal='63' />
+            <column datatype='integer' name='Total Boosters' ordinal='64' />
+            <column datatype='string' name='Total Boosters Per Hundred' ordinal='65' />
+            <column datatype='integer' name='Total Cases' ordinal='66' />
+            <column datatype='string' name='Total Cases Per Million' ordinal='67' />
+            <column datatype='integer' name='Total Deaths' ordinal='68' />
+            <column datatype='string' name='Total Deaths Per Million' ordinal='69' />
+            <column datatype='integer' name='Total Vaccinations' ordinal='70' />
+            <column datatype='string' name='Total Vaccinations Per Hundred' ordinal='71' />
+            <column datatype='string' name='Vaccinated over Population' ordinal='72' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-16LE&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_AR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Range Selected</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Date Range Selected]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Date Range Selected</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative Absolute</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative Absolute]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative Absolute</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Excess Mortality Cumulative Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Excess Mortality Cumulative Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Excess Mortality Cumulative Per Million</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extreme Poverty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Extreme Poverty]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Extreme Poverty</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female Smokers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Female Smokers]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Female Smokers</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hosp Patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hosp Patients]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hosp Patients</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hosp Patients Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hosp Patients Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hosp Patients Per Million</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Icu Patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Icu Patients]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Icu Patients</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Icu Patients Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Icu Patients Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Icu Patients Per Million</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Iso Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Iso Code]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Iso Code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location (copy)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location (copy)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location (copy)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location (geo)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location (geo)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Location (geo)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male Smokers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Male Smokers]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Male Smokers</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Per Thousand</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Smoothed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Smoothed</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Tests Smoothed Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Tests Smoothed Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Tests Smoothed Per Thousand</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positive Rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Positive Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Positive Rate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tests Per Case</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tests Per Case]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Tests Per Case</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tests Units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tests Units]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Tests Units</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Tests]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Tests</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Tests Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Tests Per Thousand</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Hosp Admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Hosp Admissions]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Hosp Admissions</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Hosp Admissions Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Hosp Admissions Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Hosp Admissions Per Million</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Icu Admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Icu Admissions]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Icu Admissions</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Icu Admissions Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weekly Icu Admissions Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Weekly Icu Admissions Per Million</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aged 65 Older</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aged 65 Older]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Aged 65 Older</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aged 70 Older</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aged 70 Older]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Aged 70 Older</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cardiovasc Death Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cardiovasc Death Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Cardiovasc Death Rate</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes Prevalence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes Prevalence]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Diabetes Prevalence</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fully Vaccinated over Population</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fully Vaccinated over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Fully Vaccinated over Population</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gdp Per Capita</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gdp Per Capita]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Gdp Per Capita</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Handwashing Facilities</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Handwashing Facilities]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Handwashing Facilities</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital Beds Per Thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital Beds Per Thousand]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Hospital Beds Per Thousand</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Human Development Index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Human Development Index]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Human Development Index</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Life Expectancy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Life Expectancy]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Life Expectancy</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median Age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Median Age]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Median Age</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Cases]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Cases Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Per Million</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Smoothed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Cases Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Smoothed</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Cases Smoothed Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Cases Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Cases Smoothed Per Million</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Deaths]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Deaths Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Per Million</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Smoothed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Deaths Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Smoothed</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Deaths Smoothed Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Deaths Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Deaths Smoothed Per Million</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations over Population</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[New Vaccinations over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations over Population</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations Smoothed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations Smoothed]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations Smoothed</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>New Vaccinations Smoothed Per Million</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[New Vaccinations Smoothed Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>New Vaccinations Smoothed Per Million</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Not Vaccinated over Population </remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Not Vaccinated over Population ]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Not Vaccinated over Population </remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Fully Vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[People Fully Vaccinated]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Fully Vaccinated</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Fully Vaccinated Per Hundred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[People Fully Vaccinated Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Fully Vaccinated Per Hundred</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[People Vaccinated]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated over Population (delta)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[People Vaccinated over Population (delta)]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated over Population (delta)</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People Vaccinated Per Hundred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[People Vaccinated Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>People Vaccinated Per Hundred</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Density</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population Density]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Population Density</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reproduction Rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reproduction Rate]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Reproduction Rate</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stringency Index</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stringency Index]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Stringency Index</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Boosters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Boosters]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Boosters</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Boosters Per Hundred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Boosters Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Boosters Per Hundred</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Cases]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Cases</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cases Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Cases Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Cases Per Million</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Deaths]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Deaths</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Deaths Per Million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Deaths Per Million]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Deaths Per Million</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Vaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Vaccinations]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Vaccinations</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Vaccinations Per Hundred</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Total Vaccinations Per Hundred]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Total Vaccinations Per Hundred</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vaccinated over Population</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vaccinated over Population]</local-name>
+            <parent-name>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv]</parent-name>
+            <remote-alias>Vaccinated over Population</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Not Vaccinated over Population' datatype='string' name='[Not Vaccinated over Population ]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' id='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv_1DD4A2DE19D54584B253CD0A3571CE99'>
+            <properties context=''>
+              <relation connection='textscan.1gmk2pg06xj8mv1bl09i60ydv0t8' name='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data.csv' table='[Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data#csv]' type='table'>
+                <columns character-set='UTF-16LE' header='yes' locale='es_AR' separator='&#9;'>
+                  <column datatype='string' name='Continent' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='boolean' name='Date Range Selected' ordinal='2' />
+                  <column datatype='string' name='Excess Mortality' ordinal='3' />
+                  <column datatype='string' name='Excess Mortality Cumulative' ordinal='4' />
+                  <column datatype='string' name='Excess Mortality Cumulative Absolute' ordinal='5' />
+                  <column datatype='string' name='Excess Mortality Cumulative Per Million' ordinal='6' />
+                  <column datatype='string' name='Extreme Poverty' ordinal='7' />
+                  <column datatype='string' name='Female Smokers' ordinal='8' />
+                  <column datatype='string' name='Hosp Patients' ordinal='9' />
+                  <column datatype='string' name='Hosp Patients Per Million' ordinal='10' />
+                  <column datatype='string' name='Icu Patients' ordinal='11' />
+                  <column datatype='string' name='Icu Patients Per Million' ordinal='12' />
+                  <column datatype='string' name='Iso Code' ordinal='13' />
+                  <column datatype='string' name='Location' ordinal='14' />
+                  <column datatype='string' name='Location (copy)' ordinal='15' />
+                  <column datatype='string' name='Location (geo)' ordinal='16' />
+                  <column datatype='string' name='Male Smokers' ordinal='17' />
+                  <column datatype='string' name='New Tests' ordinal='18' />
+                  <column datatype='string' name='New Tests Per Thousand' ordinal='19' />
+                  <column datatype='string' name='New Tests Smoothed' ordinal='20' />
+                  <column datatype='string' name='New Tests Smoothed Per Thousand' ordinal='21' />
+                  <column datatype='string' name='Positive Rate' ordinal='22' />
+                  <column datatype='string' name='Tests Per Case' ordinal='23' />
+                  <column datatype='string' name='Tests Units' ordinal='24' />
+                  <column datatype='string' name='Total Tests' ordinal='25' />
+                  <column datatype='string' name='Total Tests Per Thousand' ordinal='26' />
+                  <column datatype='string' name='Weekly Hosp Admissions' ordinal='27' />
+                  <column datatype='string' name='Weekly Hosp Admissions Per Million' ordinal='28' />
+                  <column datatype='string' name='Weekly Icu Admissions' ordinal='29' />
+                  <column datatype='string' name='Weekly Icu Admissions Per Million' ordinal='30' />
+                  <column datatype='integer' name='Aged 65 Older' ordinal='31' />
+                  <column datatype='integer' name='Aged 70 Older' ordinal='32' />
+                  <column datatype='integer' name='Cardiovasc Death Rate' ordinal='33' />
+                  <column datatype='string' name='Diabetes Prevalence' ordinal='34' />
+                  <column datatype='string' name='Fully Vaccinated over Population' ordinal='35' />
+                  <column datatype='string' name='Gdp Per Capita' ordinal='36' />
+                  <column datatype='integer' name='Handwashing Facilities' ordinal='37' />
+                  <column datatype='string' name='Hospital Beds Per Thousand' ordinal='38' />
+                  <column datatype='integer' name='Human Development Index' ordinal='39' />
+                  <column datatype='string' name='Life Expectancy' ordinal='40' />
+                  <column datatype='string' name='Median Age' ordinal='41' />
+                  <column datatype='integer' name='New Cases' ordinal='42' />
+                  <column datatype='string' name='New Cases Per Million' ordinal='43' />
+                  <column datatype='string' name='New Cases Smoothed' ordinal='44' />
+                  <column datatype='string' name='New Cases Smoothed Per Million' ordinal='45' />
+                  <column datatype='integer' name='New Deaths' ordinal='46' />
+                  <column datatype='string' name='New Deaths Per Million' ordinal='47' />
+                  <column datatype='string' name='New Deaths Smoothed' ordinal='48' />
+                  <column datatype='string' name='New Deaths Smoothed Per Million' ordinal='49' />
+                  <column datatype='integer' name='New Vaccinations' ordinal='50' />
+                  <column datatype='string' name='New Vaccinations over Population' ordinal='51' />
+                  <column datatype='integer' name='New Vaccinations Smoothed' ordinal='52' />
+                  <column datatype='integer' name='New Vaccinations Smoothed Per Million' ordinal='53' />
+                  <column datatype='string' name='Not Vaccinated over Population ' ordinal='54' />
+                  <column datatype='integer' name='People Fully Vaccinated' ordinal='55' />
+                  <column datatype='string' name='People Fully Vaccinated Per Hundred' ordinal='56' />
+                  <column datatype='integer' name='People Vaccinated' ordinal='57' />
+                  <column datatype='string' name='People Vaccinated over Population (delta)' ordinal='58' />
+                  <column datatype='string' name='People Vaccinated Per Hundred' ordinal='59' />
+                  <column datatype='integer' name='Population' ordinal='60' />
+                  <column datatype='integer' name='Population Density' ordinal='61' />
+                  <column datatype='string' name='Reproduction Rate' ordinal='62' />
+                  <column datatype='string' name='Stringency Index' ordinal='63' />
+                  <column datatype='integer' name='Total Boosters' ordinal='64' />
+                  <column datatype='string' name='Total Boosters Per Hundred' ordinal='65' />
+                  <column datatype='integer' name='Total Cases' ordinal='66' />
+                  <column datatype='string' name='Total Cases Per Million' ordinal='67' />
+                  <column datatype='integer' name='Total Deaths' ordinal='68' />
+                  <column datatype='string' name='Total Deaths Per Million' ordinal='69' />
+                  <column datatype='integer' name='Total Vaccinations' ordinal='70' />
+                  <column datatype='string' name='Total Vaccinations Per Hundred' ordinal='71' />
+                  <column datatype='string' name='Vaccinated over Population' ordinal='72' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI_1-Partially Vaccinated'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.11qmo041dogl2213yaeuw0cnu4bl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11qmo041dogl2213yaeuw0cnu4bl'>
+            <column datatype='integer' name='[People Vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[People Vaccinated]' derivation='Max' name='[max:People Vaccinated:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11qmo041dogl2213yaeuw0cnu4bl].[max:People Vaccinated:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#f9a655' fontsize='18'><![CDATA[<[federated.11qmo041dogl2213yaeuw0cnu4bl].[max:People Vaccinated:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#f9a655' fontsize='12'>People only partly vaccinated against COVID-19</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2318B67A-37E1-45E7-8FCB-869016C04A23}' />
+    </worksheet>
+    <worksheet name='KPI_2-Fully Vaccinated'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Copy of country_vaccinations.csv+ (Multiple Connections)_Full Data' name='federated.11qmo041dogl2213yaeuw0cnu4bl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11qmo041dogl2213yaeuw0cnu4bl'>
+            <column datatype='integer' name='[People Fully Vaccinated]' role='measure' type='quantitative' />
+            <column-instance column='[People Fully Vaccinated]' derivation='Max' name='[max:People Fully Vaccinated:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.11qmo041dogl2213yaeuw0cnu4bl].[max:People Fully Vaccinated:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#f9a655' fontsize='18'><![CDATA[<[federated.11qmo041dogl2213yaeuw0cnu4bl].[max:People Fully Vaccinated:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#f9a655' fontsize='12'>People fully vaccinated against COVID-19</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0504A238-A546-42E1-8076-331C52B9D33F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5355768F-4D85-483D-917C-C5E8ACDE0344}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI_1-Partially Vaccinated'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E8D0B08-EFDE-4876-BDE4-AB4A6D6B2772}' />
+    </window>
+    <window class='worksheet' maximized='true' name='KPI_2-Fully Vaccinated'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AFAECB94-022A-4379-ACCF-602322AFC5D2}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD4D1905-BC64-4282-8FF5-90D99A83B16C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='61' name='KPI_1-Partially Vaccinated' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='61' name='KPI_2-Fully Vaccinated' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

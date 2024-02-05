@@ -319,7 +319,76 @@ HAVING COUNT(age) >= 10
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
+/*
+Youngest Team Members
+You are working with a database that stores information about employees in a tech firm. The database includes a table named employees with the following columns:
+employee_id: A unique integer identifier for each employee.
+full_name: A string representing the employee's full name.
+team: A string that specifies which team the employee is part of. The team can be one of the following four: "backend", "frontend", "devops", or "design".
+birth_date: A date that represents the employee's birthdate.
+The company is planning an event where the youngest employee from each team will be given a chance to share their vision of future technology trends.
+Your task is to write an SQL query that retrieves the complete record for the youngest member of each team. You should consider the person with the latest birthdate as the youngest. Let's assume for this task that the are no youngest employees who share the same birthdate.
+The classical solution of using aggregate function and group by is forbidden. Can you come up with something more witty?
+The result should be ordered by team in asc alphabetical order.
+Good luck!
+Desired Output
+The desired output should look like this:
+employee_id	full_name	team	birth_date
+11	John Doe	backend	1980-12-01
+7	Jane Smith	design	1985-05-03
+24	Bob Jones	devops	1990-04-15
+54	Dana Smith	frontend	1995-05-03
+Solution:
+*/
+SELECT DISTINCT e.employee_id, e.full_name, e.team, e.birth_date
+FROM employees e
+WHERE e.birth_date >= ALL (
+  SELECT b.birth_date 
+  FROM employees b 
+  WHERE b.team = e.team)
+ORDER BY e.team, e.birth_date
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+Dealing With Messy Data
+Your company has an internal policy to determine your customers' credit limit, but this procedure has been questioned recently by the board as being too conservative.
+Your CEO wants to increase the current customer base credit limits in order to upsell a new line of products. In order to do that, the company hired several external consultancies to produce new credit limit estimates.
+The problem is that each agency has produced the report in its own format. Some use the format "First-name Last-name" to identify a person, others use the format "Last-name, First-name". There is also no consensus on how to capitalize each word, so some used all uppercase, others used all lowercase, and some used mixed-case.
+Also, some names are titled, for example: "Dr. Hannibal Lecter", "Robert Downey Jr." etc, so you will need to pay attention to any such or similar cases.
+Internally, the data is structured as follows:
+Table: customers
+================
+id: INT
+first_name: TEXT
+last_name: TEXT
+credit_limit: FLOAT
 
+The data you've received from all agencies was consolidated in the following table:
+
+Table: prospects
+================
+full_name: TEXT
+credit_limit: FLOAT
+Keep in mind that the agencies had access only to a partial customer base. There is also the possibility of more than one agency prospecting the same customer, so it's highly likely that there will be duplicates. Finally, they've prospected customers that were not in your customer base as well.
+For this task you are interested in the prospected customers that are already in your customer base and the prospected credit limit is higher than your internal estimate. When more than one agency prospected the same customer, chose the highest estimate.
+You have to produce a report with the following fields:
+first_name
+last_name
+old_limit [the current credit_limit]
+new_limit [the highest credit_limit found]
+Good luck!
+Notes:
+•	only list the customers that a higher credit limit was found.
+Solution:
+*/
+SELECT c.first_name, c.last_name, c.credit_limit AS old_limit, p.credit_limit AS new_limit
+FROM customers c
+JOIN prospects p ON (c.first_name || c.last_name) ILIKE INITCAP(p.full_name)
+LIMIT 5;
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 
 
