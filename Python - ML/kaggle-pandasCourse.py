@@ -60,4 +60,65 @@ print(reviews.index_backwards)
 
 #Renaming and Combining
 reviews.rename(columns={'points': 'score'}) #~> to rename the points column to score
+reviews.rename(index={0: 'firstEntry', 1: 'secondEntry'}) #~> rename the first and second rows index
+print(reviews.rename_axis("wines", axis='rows').rename_axis("fields", axis='columns')) #~> rename both the row index and the column index
+#Combining
+canadian_youtube = pd.read_csv("./CAvideos.csv")
+british_youtube = pd.read_csv("./GBvideos.csv")
+pd.concat([canadian_youtube, british_youtube]) #~> to concatenate the two dataframes
+left = canadian_youtube.set_index(['title', 'trending_date'])
+right = british_youtube.set_index(['title', 'trending_date'])
+left.join(right, lsuffix='_CAN', rsuffix='_UK') #~> to join the two dataframes.
+#Note: lsuffix and rsuffix are used to specify the suffixes to use for overlapping columns
+
+#Summary Functions and Maps
+print(f'Describe points:\n{reviews.points.describe()}')
+print(f'{reviews.taster_name.describe()}')
+print(f'{reviews.points.mean()}')
+print(f'{reviews.taster_name.unique()}') #~> to show the unique values
+print(f'{reviews.taster_name.value_counts()}') #~> to show the number of times each value appears
+#Map
+review_points_mean = reviews.points.mean()
+print(f'{reviews.points.map(lambda p: p - review_points_mean)}') #~> to subtract the mean from each value
+def remean_points(row):
+    row.points = row.points - review_points_mean
+    return row
+
+reviews.apply(remean_points, axis='columns')
+print(reviews.head(1))
+
+review_points_mean = reviews.points.mean()
+reviews.points - review_points_mean #~> to subtract the mean from each value
+reviews.country + " - " + reviews.region_1 #~> to concatenate the country and the region_1
+
+#I'm an economical wine buyer. Which wine is the "best bargain"? Create a variable bargain_wine with the title of the wine with the highest points-to-price ratio in the dataset.
+bargain_wine = reviews.title[(reviews.points / reviews.price).idxmax()]
+
+#Grouping and Sorting
+print(reviews.groupby('points').points.count()) #~> to group by points and count the number of times each value appears
+print(reviews.groupby('points').price.min()) #~> to group by points and show the minimum price
+print(reviews.groupby('winery').apply(lambda df: df.title.iloc[0])) #~> to group by winery and show the first title of each group
+reviews.groupby(['country', 'province']).apply(lambda df: df.loc[df.points.idxmax()]) #~> to group by country and province and show the row with the maximum points
+print(reviews.groupby(['country']).price.agg([len, min, max])) #~> to group by country and show the length, minimum and maximum price
+#Multi-indexes
+countries_reviewed = reviews.groupby(['country', 'province']).description.agg([len])
+print(countries_reviewed)
+mi = countries_reviewed.index
+print(mi) #~> to show the multi-index
+print(countries_reviewed.reset_index())#~> to reset the index
+#Sorting
+countries_reviewed = countries_reviewed.reset_index()
+print(countries_reviewed.sort_values(by='len')) #~> to sort by len
+print(countries_reviewed.sort_values(by='len', ascending=False)) #~> to sort by len in descending order
+print(countries_reviewed.sort_index()) #~> to sort by index
+print(countries_reviewed.sort_values(by=['country', 'len'])) #~> to sort by country and len
+
+#Data Types and Missing Values
+print(reviews.price.dtype) #~> to show the data type of the price column
+print(reviews.dtypes) #~> to show the data type of all columns
+print(reviews.points.astype('float64')) #~> to change the data type of the points column to float64
+print(reviews.index.dtype) #~> to show the data type of the index
+reviews[pd.isnull(reviews.country)] #~> to show the rows where the country is null
+reviews.region_2.fillna("Unknown") #~> to fill the null values with "Unknown"
+reviews.taster_twitter_handle.replace("@kerinokeefe", "@kerino") #~> to replace the values
 
