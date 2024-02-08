@@ -17,9 +17,11 @@ FROM
  GROUP BY id, name,manager_id, salary, designation
 ) a
 WHERE records > 1
-;--Alternative with HAVING
+;
+--Alternative with HAVING
 SELECT id, name, manager_id, salary, designation, COUNT(*) as records
 FROM emp_details
 GROUP BY id, name,manager_id, salary, designation
 HAVING COUNT(*) > 1
-;
+;
+

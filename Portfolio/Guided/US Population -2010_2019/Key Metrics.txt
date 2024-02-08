@@ -1,0 +1,9 @@
+Key metrics selected for this app
+The primary question this population dashboard aims to answer is: how do US state populations change over time?
+
+What questions do we need to ask that will help us answer this dashboard goal?
+
+-How do total populations compare among different states?
+-How do state populations evolve over time and how do they compare to each other?
+-In a given year, which states experienced more than 50,000 people moving in, or out? 
+ We'll label these inbound and outbound migration metrics.
