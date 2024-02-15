@@ -382,10 +382,57 @@ Notes:
 •	only list the customers that a higher credit limit was found.
 Solution:
 */
-SELECT c.first_name, c.last_name, c.credit_limit AS old_limit, p.credit_limit AS new_limit
-FROM customers c
-JOIN prospects p ON (c.first_name || c.last_name) ILIKE INITCAP(p.full_name)
-LIMIT 5;
+CREATE INDEX ON customers (lower(first_name || ' ' || last_name), lower(first_name || ',' || last_name));
+CREATE INDEX ON prospects (lower(full_name));
+
+SELECT a.first_name,
+       a.last_name,
+       a.credit_limit AS old_limit,
+       max(b.credit_limit) AS new_limit
+FROM customers a JOIN prospects b
+  ON lower(full_name) IN (
+    lower(a.first_name || ' ' || a.last_name),
+    lower(a.last_name || ', ' || a.first_name)
+  )
+GROUP BY a.id 
+  HAVING max(b.credit_limit) > a.credit_limit
+ORDER BY first_name, last_name
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+SQL Basics: Simple PIVOTING data
+For this challenge you need to PIVOT data. You have two tables, products and details. Your task is to pivot the rows in products to produce a table of products which have rows of their detail. Group and Order by the name of the Product.
+Tables and relationship below:
+ 
+products table schema
+- id   - integer
+- name - text
+details table schema
+- id          - integer
+- product_id  - integer
+- detail      - text
+You must use the CROSSTAB statement to create a table that has the schema as below:
+CROSSTAB table schema
+- name  - text
+- bad   - bigint
+- good  - bigint
+- ok    - bigint
+If the values aren't assigned to the last three columns within the query directly, it's assumed they will be presented in the lexicographical order (i.e. if we have three values, a, b and c, then bad, good and ok will have these values respectively).
+Compare your table to the expected table to view the expected results.
+Solution:
+*/
+CREATE EXTENSION tablefunc;
+
+SELECT *
+FROM CROSSTAB (
+  'SELECT p.name, d.detail, COUNT(*)
+  FROM products p
+  JOIN details d ON p.id = d.product_id
+  GROUP BY 1, 2
+  ORDER BY 1, 2',
+  'VALUES (''bad''::text), (''good''::text), (''ok''::text)'
+) AS product_pivot (name text, bad bigint, good bigint, ok bigint);
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
