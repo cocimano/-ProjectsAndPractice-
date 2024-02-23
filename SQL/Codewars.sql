@@ -1,3 +1,5 @@
+-- CODEWARS EXERCISES
+--NOTE: Word file in the repository with the same name, provides greater clarity 
 /*
 SQL Bug Fixing: Fix the QUERY - Totaling
 
@@ -13,7 +15,6 @@ Tables and relationship below:
  
 Solution:
 */
-
 SELECT DISTINCT DATE (s.transaction_date) AS day, d.name AS department, COUNT(s.id) AS sale_count
 FROM department d
 INNER JOIN sale s ON d.id = s.department_id
@@ -477,7 +478,64 @@ FROM members_approved_for_voucher;
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
-
+/*
+Challenge: Two actors who cast together the most
+Given the the schema presented below find two actors who cast together the most and list titles of only those movies they were casting together. Order the result set alphabetically by the movie title.
+Table film_actor
+ Column     | Type                        | Modifiers
+------------+-----------------------------+----------
+actor_id    | smallint                    | not null
+film_id     | smallint                    | not null
+...
+Table actor
+ Column     | Type                        | Modifiers
+------------+-----------------------------+----------
+actor_id    | integer                     | not null 
+first_name  | character varying(45)       | not null
+last_name   | character varying(45)       | not null
+...
+Table film
+ Column     | Type                        | Modifiers
+------------+-----------------------------+----------
+film_id     | integer                     | not null
+title       | character varying(255)      | not null
+...
+The desired output:
+first_actor | second_actor | title
+------------+--------------+--------------------
+John Doe    | Jane Doe     | The Best Movie Ever
+...
+•	first_actor - Full name (First name + Last name separated by a space)
+•	second_actor - Full name (First name + Last name separated by a space)
+•	title - Movie title
+Note: actor_id of the first_actor should be lower then actor_id of the second_actor
+Solution:
+*/
+WITH full_actor AS ( --~ Name in the proper form
+  SELECT actor_id, CONCAT(first_name,' ',last_name) AS name
+  FROM actor
+),
+full_film AS ( --~ All films with their actors
+  SELECT a.actor_id, a.name, f.film_id, f.title
+  FROM full_actor a 
+  INNER JOIN film_actor fa USING(actor_id)
+  INNER JOIN film f USING(film_id)
+),
+movie_counts AS ( --~ Count coincidences between actors
+  SELECT f1.actor_id AS actor1_id, f2.actor_id AS actor2_id, COUNT(*) AS movie_count
+  FROM full_film f1
+  JOIN full_film f2 ON f1.film_id = f2.film_id AND f1.actor_id < f2.actor_id
+  GROUP BY f1.actor_id, f2.actor_id
+)
+SELECT actor1.name AS first_actor, actor2.name AS second_actor, actor1.title
+FROM full_film actor1
+JOIN full_film actor2 ON actor1.film_id = actor2.film_id AND actor1.actor_id < actor2.actor_id
+JOIN movie_counts mc ON actor1.actor_id = mc.actor1_id AND actor2.actor_id = mc.actor2_id
+WHERE mc.movie_count = (SELECT MAX(movie_count) FROM movie_counts)
+ORDER BY actor1.title;
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 
 
