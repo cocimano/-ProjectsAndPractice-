@@ -536,7 +536,85 @@ ORDER BY actor1.title;
 /*
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
-
+/*
+Using Window Functions To Get Top N per Group
+Description
+Given the schema presented below write a query, which uses a window function, that returns two most viewed posts for every category.
+Order the result set by:
+1.	category name alphabetically
+2.	number of post views largest to lowest
+3.	post id lowest to largest
+Note:
+•	Some categories may have less than two or no posts at all.
+•	Two or more posts within the category can be tied by (have the same) the number of views. Use post id as a tie breaker - a post with a lower id gets a higher rank.
+Schema
+categories
+ Column     | Type                        | Modifiers
+------------+-----------------------------+----------
+id          | integer                     | not null
+category    | character varying(255)      | not null
+posts
+ Column     | Type                        | Modifiers
+------------+-----------------------------+----------
+id          | integer                     | not null
+category_id | integer                     | not null
+title       | character varying(255)      | not null
+views       | integer                     | not null
+Desired Output
+The desired output should look like this:
+category_id | category | title                             | views | post_id
+------------+----------+-----------------------------------+-------+--------
+5           | art      | Most viewed post about Art        | 9234  | 234
+5           | art      | Second most viewed post about Art | 9234  | 712
+2           | business | NULL                              | NULL  | NULL
+7           | sport    | Most viewed post about Sport      | 10    | 126
+...
+•	category_id - category id
+•	category - category name
+•	title - post title
+•	views - the number of post views
+•	post_id - post id
+Solution:
+*/
+-- Common Table Expression (CTE) to rank posts within each category
+WITH RankedPosts AS (
+    SELECT c.id AS category_id,
+           c.category,
+           p.id AS post_id,
+           p.views AS views,
+           p.title,
+           -- Using ROW_NUMBER() to assign a rank to each post within its category
+           ROW_NUMBER() OVER (PARTITION BY p.category_id ORDER BY p.views DESC, p.id) AS row_num
+    FROM categories c
+    LEFT JOIN posts p ON c.id = p.category_id
+    GROUP BY c.id, c.category, p.title, p.id 
+)
+SELECT category_id,
+       category, 
+       title, 
+       views, 
+       post_id
+FROM RankedPosts 
+WHERE row_num <= 2 -- two most viewed posts
+ORDER BY category, views DESC, post_id;
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 
 
