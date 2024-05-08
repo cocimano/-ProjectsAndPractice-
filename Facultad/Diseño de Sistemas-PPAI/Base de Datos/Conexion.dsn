@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=SQL Server
+UID=usuario
+DATABASE=IVR
+WSID=PC-CEBO
+APP=Enterprise Architect 15
+Trusted_Connection=Yes
+SERVER=PC-CEBO\SQLEXPRESS

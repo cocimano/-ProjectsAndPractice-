@@ -1,0 +1,17 @@
+# Python
+__pycache__
+
+# VS Code
+.vscode
+.vs
+
+# Entreprise Architect
+# EA genera un archivo durante su ejecucion de extension lbd
+PPAI IVR.ldb
+
+# IntelliJ IDEA
+.idea
+
+# Base de datos
+IVR.mdf
+IVR_log.ldf

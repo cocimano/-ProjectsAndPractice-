@@ -1,0 +1,8 @@
+[ODBC]
+DRIVER=SQL Server
+UID=Usuario
+DATABASE=IVR
+WSID=TOBI
+APP=Enterprise Architect 15
+Trusted_Connection=Yes
+SERVER=TOBI\SQLEXPRESS
